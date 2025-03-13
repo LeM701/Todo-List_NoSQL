@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap">
+</head>
+<body>
+    <header>
+        <h1>Todo-List</h1>
+    </header>
+
+    <main>
+        <!-- Add new task -->
+        <section id="task-creation">
+            <form id="task-form">
+                <label for="task-input">Nouvelle tâche :</label>
+                <input type="text" id="task-input" placeholder="Entrez une nouvelle tâche" required>
+                <button type="submit" id="btn-add-task">Ajouter</button>
+            </form>
+        </section>
+
+        <!-- Display tasks -->
+        <section id="tasks-display">
+            <h2>Liste des tâches</h2>
+            <ul id="task-list">
+                <!-- Tasks will be added via JS -->
+            </ul>
+        </section>
+    </main>
+
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+
+    <footer>
+        <p>Ceci est un footer incroyable</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
